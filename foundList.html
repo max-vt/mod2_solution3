@@ -1,7 +1,10 @@
-<h3>title</h3>
+<div class="found-list">
 <ol>
-  <li ng-repeat="item in list.found">
-    {{ item.name }}
-    <button ng-click="list.removeItem($index);">Remove Item</button>
+  <li ng-repeat="item in found">
+    <h3 class="name">{{ item.name }} [{{ item.short_name }}]</h3>
+    <span class="description">{{ item.description }}</span>
+    <button ng-click="onRemove({index: $index});">Don't want this one!</button>
   </li>
 </ol>
+<p class="empty-list" ng-if="found.length==0">Nothing found</p>
+</div>

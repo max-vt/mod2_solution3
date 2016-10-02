@@ -50,3 +50,25 @@ input[type="text"] {
     transform: rotate(360deg);
   }
 }
+
+.found-list {
+  display: inline-block;
+  width: 100%;
+}
+.found-list ol {
+  width: 60%;
+}
+.found-list li {
+    position: relative;
+}
+.found-list h3 {
+    font-size: 20px;
+}
+.found-list button {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.found-list .empty-list {
+  font-size: 20px;
+}
